@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 mongoose.set('useFindAndModify', false);
+// mongoose.connect(CONNECTION_URL).then(()=>{console.log('...')});
 const Inventory = mongoose.model('Inventory');
 
 exports.createInventory = (req, res) => {
